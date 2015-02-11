@@ -1,0 +1,182 @@
+
+
+# start wsj and frommers
+s.wsj.net/**	wl	1	
+
+*.dowjones.com/**	wl	1
+www.dowjones.com/**	wl	1
+dowjones.com/**	wl	1
+	
+air.wsj.com/**	wl	1
+
+*.googlesyndication.com/**	wl	1
+www.googlesyndication.com/**	wl	1
+googlesyndication.com/**	wl	1
+
+*.whatsonwhen.com/**	wl	1
+www.whatsonwhen.com/**	wl	1
+whatsonwhen.com/**	wl	1
+	
+yui.yahooapis.com/**	wl	1
+
+ad.doubleclick.net/**	wl	1
+
+*.ic-live.com/**	wl	1
+www.ic-live.com/**	wl	1
+ic-live.com/**	wl	1
+
+*.2mdn.net/**	wl	1
+www.2mdn.net/**	wl	1
+2mdn.net/**	wl	1
+
+*.wsjdigital.com/**	wl	1
+www.wsjdigital.com/**	wl	1
+wsjdigital.com/**	wl	1
+
+*.officelive.com/**	wl	1
+www.officelive.com/**	wl	1
+officelive.com/**	wl	1
+
+*.officeliveoffers.com/**	wl	1
+www.officeliveoffers.com/**	wl	1
+officeliveoffers.com/**	wl	1
+
+ots-beta.wmh0.com/**	wl	1
+microsoftoffice.112.2o7.net/**	wl	1
+ads1.msn.com/**	wl	1
+
+*.adrevolver.com/**	wl	1
+www.adrevolver.com/**	wl	1
+adrevolver.com/**	wl	1
+
+*.revsci.net/**	wl	1
+www.revsci.net/**	wl	1
+revsci.net/**	wl	1
+
+*.marketwatch.com/**	wl	1
+www.marketwatch.com/**	wl	1
+marketwatch.com/**	wl	1
+
+*.atdmt.com/**	wl	1
+www.atdmt.com/**	wl	1
+switch.atdmt.com/**	wl	1
+atdmt.com/**	wl	1
+# end wsj and frommers
+
+*.united.com/**	wl	1
+www.united.com/**	wl	1
+travel.united.com/**	wl	1
+shop.united.com/**	wl	1
+store.united.com/**	wl	1
+easyupdate.united.com/**	wl	1
+ir.united.com/**	wl	1
+suitedreams.united.com/**	wl 1
+
+*.ual.com/**	wl	1
+www.ual.com/**	wl	1
+ual.com/**	wl	1
+
+*.unitedvacations.com/**	wl	1
+www.unitedvacations.com/**	wl	1
+res.unitedvacations.com/**	wl	1
+unitedvacations.com/**	wl	1
+
+*.ua2go.com/**	wl	1
+www.ua2go.com/**	wl	1
+faq.ua2go.com/**	wl	1
+
+*.ualsurvey.com/**	wl	1
+www.ualsurvey.com/**	wl	1
+
+*.staralliance.com/**	wl	1
+www.staralliance.com/**	wl	1
+staralliance.com/**	wl	1
+
+united.promo.eprize.com/**	wl	1
+
+*.unitedtracksurvey.com/**	wl	1
+www.unitedtracksurvey.com/**	wl 	1
+survey.novatris.com/**	wl	1
+
+*.google-analytics.com/**	wl	1
+www.google-analytics.com/**	wl	1
+google-analytics.com/**	wl	1
+
+pics1.truition.com/**	wl	1
+
+media.fastclick.net/**	wl	1
+
+images.triseptsolutions.com/**	wl	1
+
+login.dotomi.com/**	wl	1
+
+*.unitedmileageplus.com/**	wl	1
+www.unitedmileageplus.com/**	wl	1
+secure.unitedmileageplus.com/**	wl	1
+
+*.ualmiles.com/**	wl	1
+www.ualmiles.com/**	wl	1
+secure.ualmiles.com/**	wl	1
+transfermiles.ualmiles.com/**	wl	1
+
+*.ualmileageplus.com/**	wl	1
+www.ualmileageplus.com/**	wl	1
+store.ualmileageplus.com/**	wl	1
+
+*.unitedpromotions.com/**	wl	1
+www.unitedpromotions.com/**	wl	1
+
+*.unitedpromos.com/**	wl	1
+www.unitedpromos.com/**	wl	1
+
+*.unitedoffers.com/**	wl	1
+www.unitedoffers.com/**	wl	1
+
+*.mymileageplus.com/**	wl	1
+www.mymileageplus.com/**	wl	1
+
+*.uaelitechoice.com/**	wl	1
+www.uaelitechoice.com/**	wl	1
+
+*.unitedps.com/**	wl 1
+www.unitedps.com/**	wl 1
+
+ual-pro.taleo.net/**	wl	1
+
+www.ualmessaging.com/**	wl	1
+
+ua.flightlookup.com/**	wl	1
+
+www.oanda.com/**	wl	1
+
+*.mediaplex.com/**	wl	1
+adfarm.mediaplex.com/**	wl	1
+img.mediaplex.com/**	wl	1
+altfarm.mediaplex.com/**	wl	1
+img-cdn.mediaplex.com/**	wl	1
+mediaplex.com/**	wl	1
+
+a56.g.akamai.net/**	wl	1
+a248.e.akamai.net/**	wl	1
+
+www.united.com.ar/**	wl	1
+www.unitedairlines.com.au/**	wl	1
+www.unitedairlines.be/**	wl	1
+www.united.com.br/**	wl	1
+www.united.ca/**	wl	1
+www.united.fr/**	wl	1
+www.unitedairlines.de/**	wl	1
+www.unitedairlines.com.hk/**	wl	1
+www.unitedairlines.co.jp/**	wl	1
+www.kr.united.com/**	wl	1
+www.kw.united.com/**	wl	1
+www.united.com.mx/**	wl	1
+www.unitedairlines.nl/**	wl	1
+www.cn.united.com/**	wl	1
+www.unitedairlines.com.sg/**	wl	1
+www.unitedairlines.ch/**	wl	1
+www.tw.united.com/**	wl	1
+www.unitedairlines.co.th/**	wl	1
+www.unitedairlines.co.uk/**	wl	1
+www.unitedairlines.com.vn/**	wl	1
+

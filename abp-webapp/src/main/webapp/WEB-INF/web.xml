@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+ <display-name>Aircell Airborne Portal Web Application</display-name>
+
+ <!-- jon.boydell - dispatcher servlet is loaded at startup so that the atg link state listener can begin consuming messages on container startup -->
+ 
+ 
+  <!-- Added for Restful services -->
+<context-param>
+	<param-name>contextConfigLocation</param-name>
+ 	<param-value>classpath*:springcfg/shared-webapp-context.xml,/WEB-INF/abp-dispatcher-servlet.xml,classpath*:springcfg/abp-*services-context.xml,classpath*:springcfg/abp-webapp-context.xml,classpath*:springcfg/cxf.xml</param-value>
+</context-param>
+
+<listener>
+	<listener-class>
+		org.springframework.web.context.ContextLoaderListener
+	</listener-class>
+</listener>
+
+<servlet>
+	<servlet-name>CXFServlet</servlet-name>
+	<servlet-class>
+		org.apache.cxf.transport.servlet.CXFServlet
+	</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>CXFServlet</servlet-name>
+	<url-pattern>/abp/ws/*</url-pattern>
+</servlet-mapping>
+ 
+ 
+ 
+ <!-- Restful configurations ends -->
+ 
+ 
+ <servlet>
+  <servlet-name>abp-dispatcher-servlet</servlet-name>
+  <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+  <init-param>
+   <param-name>contextConfigLocation</param-name>
+     <param-value>classpath*:springcfg/shared-webapp-context.xml,/WEB-INF/abp-dispatcher-servlet.xml,classpath*:springcfg/abp-*services-context.xml,classpath*:springcfg/abp-webapp-context.xml</param-value>
+  </init-param>
+  <load-on-startup>1</load-on-startup>
+ </servlet>
+
+ <servlet-mapping>
+  <servlet-name>abp-dispatcher-servlet</servlet-name>
+  <url-pattern>*.do</url-pattern>
+ </servlet-mapping>
+
+  <filter>
+        <filter-name>MobileDeviceFilter</filter-name>
+        <filter-class>
+            com.aircell.abp.web.servlet.AircellMobileFilter
+        </filter-class>
+        <init-param>
+            <param-name>listLocation</param-name>
+            <param-value>devices.xml</param-value>
+        </init-param>
+        <init-param>
+            <param-name>excludePattern</param-name>
+            <param-value>/library.*</param-value>
+        </init-param>
+        <init-param>
+          <param-name>splashPage</param-name>
+          <param-value>.*splash.do.*</param-value>
+        </init-param>
+        <init-param>
+          <param-name>securePort</param-name>
+          <param-value>@gbp-webapp.https.port@</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>MobileDeviceFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+<welcome-file-list>
+  <welcome-file>index.html</welcome-file>
+ </welcome-file-list>
+
+ <jsp-config>
+  <taglib>
+   <taglib-uri>http://java.sun.com/jsp/jstl/core</taglib-uri>
+   <taglib-location>/WEB-INF/tlds/c.tld</taglib-location>
+  </taglib>
+  <taglib>
+   <taglib-uri>http://java.sun.com/jsp/jstl/fmt</taglib-uri>
+   <taglib-location>/WEB-INF/tlds/fmt.tld</taglib-location>
+  </taglib>
+  <taglib>
+   <taglib-uri>http://java.sun.com/jsp/jstl/fn</taglib-uri>
+   <taglib-location>/WEB-INF/tlds/fn.tld</taglib-location>
+  </taglib>
+  <taglib>
+   <taglib-uri>/WEB-INF/rssutils.tld</taglib-uri>
+   <taglib-location>/WEB-INF/tlds/rssutils.tld</taglib-location>
+  </taglib>
+  <taglib>
+  	<taglib-uri>/spring</taglib-uri>
+    <taglib-location>/WEB-INF/tlds/spring.tld</taglib-location>
+  </taglib>
+  
+ </jsp-config>
+</web-app>

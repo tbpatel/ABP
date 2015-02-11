@@ -1,0 +1,277 @@
+# Don't remove these lines                            #
+# DNS(eg. svr.com)		Port (0 means ANY)    #
+
+www.nwa.com	0
+
+www.res.nwa.com	0
+res.nwa.com	0
+
+northwestairlines.112.2o7.net	0
+www.northwestairlines.112.2o7.net	0
+
+www.tc.nwa.com	0
+tc.nwa.com	0
+
+www.cargo.nwa.com	0
+cargo.nwa.com	0
+
+www.nwaworldvacations.com	0
+
+www.nwa.innosked.com	0
+nwa.innosked.com	0
+
+sslstats.nwaworldvacations.com	0
+
+www.mobile.nwa.com	0
+mobile.nwa.com	0
+
+www.carhotel.nwa.com	0
+carhotel.nwa.com	0
+
+www.switch.atdmt.com	0
+switch.atdmt.com	0
+www.atdmt.com	0
+
+www.trafficmp.com	0
+
+www.casalmedia.com	0
+
+www.optimost.com	0
+by.essl.optimost.com	0
+
+ssl.google-analytics.com	0
+
+www.delta.com	0
+
+www.trip.delta.com	0
+trip.delta.com	0
+
+www.smetrics.delta.com	0
+smetrics.delta.com	0
+
+www.delta.innosked.com	0
+delta.innosked.com	0
+
+www.https.edge.ru4.com	0
+https.edge.ru4.com	0
+
+ad.doubleclick.net	0
+
+secure.leadback.advertising.com	0
+
+as00.estara.com	0
+p-as01.estara.com	0
+c-as01.estara.com	0
+as01.estara.com	0
+
+www.skymilescruises.com	0
+
+www.deltavacations.com	0
+
+www.deltacargo.com	0
+
+www.skyteam.com	0
+
+www.delta-skybonus.com	0
+
+www.delta.mpmvp.com	0
+delta.mpmvp.com	0
+
+www.deltajobs.net	0
+
+www.i3.ytmg.com	0
+i3.ytmg.com	0
+
+www.delta.greatjob.net	0
+delta.greatjob.net	0
+
+www.stats.onestat.com	0
+stats.onestat.com	0
+
+www.ga3.org	0
+
+www.getactive.com	0
+
+www.content.travimp.com	0
+content.travimp.com	0
+
+www.delta-images.com	0
+
+wwww.deltaphotography.com	0
+
+www.skymilesclothingcare.com	0
+
+www.thanksagain.com	0
+
+www.thanksagainaffiliate.com	0
+
+www.storelocator.electricvine.com	0
+
+www.sniff.visistat.com	0
+sniff.visistat.com	0
+
+www.skymiles.rewardsnetwork.com	0
+skymiles.rewardsnetwork.com	0
+
+www.content.idine.com	0
+content.idine.com	0
+
+www.mediaplex.com	0
+
+www.counter.rewardsnetwork.com	0
+counter.rewardsnetwork.com	0
+
+www.btilelog.access.mapquest.com	0
+btilelog.access.mapquest.com	0
+
+www.skymilesshopping.com	0
+
+www.skymilesshopping.co.uk	0
+
+a786.g.akamai.net	0
+a248.e.akamai.net	0
+
+dsp.imageg.net	0
+
+news.delta.com	0
+
+mobile.delta.com	0
+
+www201.americanexpress.com	0
+secure.americanexpress.com	0
+omns.americanexpress.com	0
+01.americanexpress.com	0
+tc.americanexpress.com	0
+cardapp.americanexpress.com	0
+americanexpress.disk11.com	0
+www2.tmpvtp.com	0
+fls.doublclick.net	0
+ss7.zedo.com	0
+s.tribalfusion.com	0
+acxiom.g.mm7.net	0
+ss1.zedo.com	0
+ad.yieldmanager.com	0
+media.adrevolver.com	0
+acxiom.g.mm7.net	0
+www.ic-live.com	0
+
+
+
+
+
+
+
+
+s.wsj.net	80
+
+www.dowjones.com	80
+dowjones.com	80
+	
+air.wsj.com	80
+www.googlesyndication.com	80
+
+www.whatsonwhen.com	80
+whatsonwhen.com	80
+	
+yui.yahooapis.com	80
+
+ic-live.com	0
+
+www.2mdn.net	80
+
+www.wsjdigital.com	80
+wsjdigital.com	80
+
+www.officelive.com	80
+officelive.com	80
+
+www.officeliveoffers.com	80
+officeliveoffers.com	80
+
+ots-beta.wmh0.com	80
+microsoftoffice.112.2o7.net	80
+ads1.msn.com	80
+
+www.adrevolver.com	80
+www.yieldmanager.com	80
+www.fastclick.net	80
+fastclick.net	80
+www.revsci.net	80
+
+nwa.com	0
+
+nwaworldvacations.com	80
+
+atdmt.com	80
+
+trafficmp.com	0
+
+casalmedia.com	0
+
+www.northwestairlines.com	80
+northwestairlines.com	80
+
+www.sbot.iseatz.com	80
+sbot.iseatz.com	80
+
+www.images.flexrez.com	80
+
+optimost.com	0
+
+
+www.google-analytics.com	80
+google-analytics.com	80
+
+
+delta.com	0
+
+
+www.edge.ru4.com	80
+edge.ru4.com	80
+
+www.doubleclick.net	80
+doubleclick.net	80
+
+www.secure.leadback.advertising.com	0
+
+www.as00.estara.com	0
+
+skymilescruises.com	0
+
+deltavacations.com	0
+
+deltacargo.com	0
+
+skyteam.com	0
+
+delta-skybonus.com	0
+
+
+deltajobs.net	0
+
+
+ga3.org	0
+
+getactive.com	0
+
+
+delta-images.com	0
+
+deltaphotography.com	0
+
+skymilesclothingcare.com	0
+
+thanksagain.com	0
+
+thanksagainaffiliate.com	0
+
+storelocator.electricvine.com	0
+
+
+mediaplex.com	0
+
+skymilesshopping.com	0
+
+skymilesshopping.co.uk	0
+
+images.delta.com.edgesuite.net	0

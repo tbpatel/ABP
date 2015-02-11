@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<devices>
+	<device mobile="true" supported="true">Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95/10.0.018; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413</device>
+	<device mobile="true" supported="true">Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95/11.0.026; Profile MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413</device>
+    <device mobile="true" supported="true">Mozilla/5.0 (QtEmbedded; U; Linux; C -) AppleWebkit/532.4 (KHTML, like Gecko) browser/0.1 Safari/532.4</device>
+    <device mobile="false" supported="true">iPad UA</device>
+    <device mobile="false" supported="true">iPad; U; CPU</device>
+	<device mobile="true" supported="true">Pre/1.0</device>
+  <device mobile="true" supported="true">Mozilla/4.0 (compatible; MSIE 4.01; Windows CE;</device>
+	<device mobile="true" supported="true">Mozilla/5.0 (iPod; U; CPU like Mac OS X; en)</device>
+  <device mobile="true" supported="true">Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en)</device>
+	<device mobile="true" supported="true">NokiaN95</device>
+  <device mobile="true" supported="true">blackbBerry8820</device>
+	<device mobile="true" supported="true">blackBerry8830</device>
+  <device mobile="true" supported="true">Camino</device>
+	<device mobile="true" supported="true">blackBerry</device>
+	<device mobile="true" supported="false">Mobile</device>
+	<device mobile="true" supported="false">Windows CE</device>
+  <device mobile="false" minVersion="2">Firefox</device>
+  <device mobile="false" minVersion="3">Safari</device>
+  <device mobile="false" minVersion="6">MSIE</device>
+  <device mobile="false" minVersion="1">Chrome</device>
+</devices>

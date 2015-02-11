@@ -1,0 +1,40 @@
+
+
+
+www.verisign.com/**	wl	1
+verisign.com/**	wl	1
+
+seal.verisign.com/**	wl	1
+
+*.aircell.com/**	wl	1
+aircell.com/**	wl	1
+
+aircell.mediaroom.com/**	wl	1
+
+*.gogoinflight.com/**	sa	1
+gogoinflight.com/**	wl	1
+
+*.adobe.com/**	wl	1
+adobe.com/**	wl	1
+
+*.macromedia.com/**	wl	1
+macromedia.com/**	wl	1
+
+statse.webtrendslive.com/**	wl	1
+stage2.mediaroom.com/**	wl	1
+gogo.mediaroom.com/**	wl	1
+
+*.tsa.gov/**	wl	1
+tsa.gov/**	wl	1
+
+*.tsa.dhs.gov/**	wl	1
+tsa.dhs.gov/**	wl	1
+
+now.eloqua.com/**	wl	1
+en25.com/**	wl	1
+
+# roaming
+pb.ipass.com/**	wl	1
+pb2.ipass.com/**	wl	1
+pb3.ipass.com/**	wl	1
+pb4.ipass.com/**	wl	1

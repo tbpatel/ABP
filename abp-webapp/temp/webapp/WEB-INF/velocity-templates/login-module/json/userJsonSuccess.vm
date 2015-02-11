@@ -1,0 +1,5 @@
+userDetails: {    
+            ipAddress : #showJsonValue($ipAddress),
+            macAddress: #showJsonValue($macAddress),
+            userName  : #showJsonValue($userName)
+    }

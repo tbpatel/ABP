@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+			 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			 xmlns:aop="http://www.springframework.org/schema/aop"
+			 xsi:schemaLocation="
+			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+			http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+			
+		<!--  TODO line below should be replaced with aop:spring-configured -->
+	<!--  but thanks to a jwebunit dependency on xerces xml parser having this line -->
+	<!--  in place breaks the build as XSD validation of this doc fails -->
+	<!--  the line below has the same effect as the XML tag and is a temporary workaround -->
+	<!--  until the XML parser runtime issues have been resolved -->
+	<bean class="org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect"
+				factory-method="aspectOf"/>
+
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE"/>
+		<property name="ignoreResourceNotFound" value="true"/>
+		<property name="locations">
+			<list>
+				<value>classpath*:abp-service-integration-tests.properties</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- ####################################### -->
+	<!--          JMS Spring Beans               -->
+	<!-- ####################################### -->
+	<!-- JNDI Environment Template -->
+	<bean id="jndiTemplate" class="org.springframework.jndi.JndiTemplate">
+		<property name="environment">
+			<props>
+				<prop key="java.naming.factory.initial">${abp.jms.java.naming.factory.initial}</prop>
+				<prop key="java.naming.provider.url">${abp.jms.java.naming.provider.url}</prop>
+				<prop key="java.naming.factory.url.pkgs">${abp.jms.java.naming.factory.url.pkgs}</prop>
+			</props>
+		</property>
+	</bean>
+
+	<!-- JMS Queue Connection Factory -->
+	<bean id="internalJmsQueueConnectionFactory" class="org.springframework.jndi.JndiObjectFactoryBean">
+		<property name="jndiTemplate"><ref bean="jndiTemplate"/></property>
+		<property name="jndiName"><value>${abp.jms.jndiName.connectionFactoryName}</value></property>
+	</bean>
+	
+    <bean id="flightInfoQueue" class="org.springframework.jndi.JndiObjectFactoryBean">
+		<property name="jndiTemplate" ref="jndiTemplate"/>
+		<property name="jndiName" value="${abp.jms.flightinfo.request.queuename}"/>
+	</bean>	
+	
+	<bean id="atgLinkStateTopic" class="org.springframework.jndi.JndiObjectFactoryBean">
+		<property name="jndiTemplate" ref="jndiTemplate"/>
+		<property name="jndiName" value="${abp.jms.atgLinkState.topicname}"/>
+	</bean>
+
+    <bean id="jmsDestinationResolver"
+				class="org.springframework.jms.support.destination.JndiDestinationResolver">
+		<property name="jndiTemplate">
+			<ref bean="jndiTemplate"/>
+		</property>
+		<property name="cache">
+			<value>false</value>
+		</property>
+	</bean>
+
+	<!-- JMS Queue Template -->
+	<bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+		<property name="connectionFactory">
+			<ref bean="internalJmsQueueConnectionFactory"/>
+		</property>
+		<property name="receiveTimeout">
+			<value>${abp.jms.jmsTemplate.receiveTimeout}</value>
+		</property>
+		<property name="destinationResolver">
+			<ref bean="jmsDestinationResolver"/>
+		</property>
+
+	</bean>
+
+	<!-- ####################################### -->
+	<!--          Application Services           -->
+	<!-- ####################################### -->
+
+    <bean id="jmsFlightInfoService" class="com.aircell.abp.service.JmsSyncOperator" init-method="checkDependenciesSet">
+		<property name="connectionFactory" ref="internalJmsQueueConnectionFactory"/>
+		<property name="destination" ref="flightInfoQueue"/>
+		<property name="receiveTimeout" value="${abp.jms.jmsTemplate.receiveTimeout}"/>
+    </bean>
+
+    <bean id="flightInfoService" class="com.aircell.abp.service.FlightInfoJmsImpl" init-method="checkDependenciesSet">
+        <property name="flightInfoJmsPropertyKey" value="Message"/>
+        <property name="flightInfoJmsPropertyValue" value="FlightInfoRequest"/>
+        <property name="jmsSyncService" ref="jmsFlightInfoService"/>
+    </bean>
+	
+	<bean id="atgLinkStateSender" class="com.aircell.abp.service.ATGLinkStateSender">
+		<property name="jmsTemplate" ref="jmsTemplate"/>
+		<property name="destination">
+			 <ref bean="atgLinkStateTopic"/>
+		</property>		
+	</bean>
+
+	<bean id="jmsAtgLinkStateService" class="com.aircell.abp.service.JmsATGLinkStateService" init-method="checkDependenciesSet">
+		<property name="flight" ref="flight"/>
+	</bean>
+	
+	<bean id="jmsAtgLinkStateServiceContainer" class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+  		<property name="concurrentConsumers" value="1"/>
+  		<property name="connectionFactory" ref="internalJmsQueueConnectionFactory"/>
+  		<property name="destination" ref="atgLinkStateTopic"/>
+  		<property name="messageListener" ref="jmsAtgLinkStateService"/>
+	</bean>
+	
+	<!-- ####################################### -->
+	<!--               The Flight                -->
+	<!-- ####################################### -->
+	
+	<bean id="flight" class="com.aircell.abp.model.Flight">
+	</bean>	
+			
+</beans>

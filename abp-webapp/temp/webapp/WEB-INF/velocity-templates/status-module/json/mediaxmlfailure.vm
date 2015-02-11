@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<status>400</status>
+<errors>
+#foreach($error in $errors)#if($velocityCount > 1),#end'$error'#end
+</errors>

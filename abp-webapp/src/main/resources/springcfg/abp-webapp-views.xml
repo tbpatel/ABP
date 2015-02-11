@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:flow="http://www.springframework.org/schema/webflow-config"
+	xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/webflow-config
+           http://www.springframework.org/schema/webflow-config/spring-webflow-config-2.0.xsd">
+
+	<!-- *** View Resolvers *** -->
+	<!-- view resolver which loads in locale specific property files. the property file has view name resolutions -->
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.ResourceBundleViewResolver">
+		<property name="basename">
+			<value>velocity-views</value>
+		</property>
+		<property name="defaultParentView">
+			<value>velocity-views</value>
+		</property>
+		<property name="order">
+			<value>0</value>
+		</property>
+	</bean>
+
+	<bean id="viewResolverJsp" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="/WEB-INF/jsp-templates/" />
+		<property name="suffix" value=".jsp" />
+		<property name="order">
+			<value>1</value>
+		</property>
+	</bean>
+</beans>

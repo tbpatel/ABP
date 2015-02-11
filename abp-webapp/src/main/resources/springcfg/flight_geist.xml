@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+    "http://www.springframework.org/dtd/spring-beans-2.0.dtd" [
+    <!ENTITY Aacute "&#xC1;">
+    <!ENTITY uacute "&#xFA;">
+    <!ENTITY ntilde "&#xF1;">
+]>
+
+<beans>
+	<bean id="flightGeistLibrary" class="com.aircell.abp.model.FlightGeistLibrary">
+		<property name="aaFlightGeist" ref="aaFlightGeist"/>
+		<property name="generalFlightGeist" ref="generalFlightGeist"/>
+		<property name="gogoFlightGeist" ref="gogoFlightGeist"/>
+		<property name="losanglesFlightGeist" ref="losanglesFlightGeist"/>
+		<property name="miamiFlightGeist" ref="miamiFlightGeist"/>
+		<property name="newyorkFlightGeist" ref="newyorkFlightGeist"/>
+		<property name="sanfranciscoFlightGeist" ref="sanfranciscoFlightGeist"/>
+	</bean>
+	<bean id="aaFlightGeist" class="com.aircell.abp.model.FlightGeist">
+		<property name="group" value="americanAirlines"/>
+		<property name="type" value="americanAirlines"/>
+		<property name="facts">
+			<list>
+				<value>138 billion: The total number of miles flown by American Airlines passengers in 2005.</value>
+				<value>American is the only major U.S. airline that leaves the majority of its aircraft surfaces unpainted. This reduces overall weight and saves on fuel costs.</value>
+				<value>In 1973, AA became the first major airline to employ a female pilot when Bonnie Tiburzi was hired to fly Boeing 727s.</value>
+				<value>In the 1960s, Mattel released a series of American Airlines stewardess Barbie dolls.</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="generalFlightGeist" class="com.aircell.abp.model.FlightGeist">
+		<property name="group" value="general"/>
+		<property name="type" value="general"/>
+		<property name="facts">
+			<list>
+				<value>The Wright brothers\' first flight (120 feet) could have taken place within the economy section of a Boeing 747-400.</value>
+				<value>On March 8, 1994, Don Ku was granted a patent for a wheeled suitcase with a collapsible towing handle.</value>
+				<value>Earl Ovington performed the first airmail delivery in 1911 by tossing a sack of mail overboard to a target 500 feet below where it was retrieved and sent on its way.</value>
+				<value>Hartsfield-Jackson International Airport in Atlanta is now the nations\' busiest airport, taking the title away from the Chicago\'s O\'Hare for the third year in a row.</value>
+				<value>There are an average of 60,000 people en route, by air, at any one time in the United States.</value>
+				<value>The first female flight attendants in 1930 were required to be registered nurses. In addition to serving the cabin, they took tickets, loaded luggage, fueled the plane, and even helped pilots push the aircraft into the hangar.</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="gogoFlightGeist" class="com.aircell.abp.model.FlightGeist">
+		<property name="group" value="gogo"/>
+		<property name="type" value="gogo"/>
+		<property name="facts">
+			<list>
+				<value>Did you know that some birds crossing the Caribbean fly at around 10,000 feet? That\'s the same altitude Gogo service becomes active. In fact, a flock of whooper swans was once detected on radar at 29,000 feet.</value>
+				<value>The world record for the longest Wi-Fi connection is 237 miles, held by Ermanno Pietrosemoli of Venezuela, who transferred about 3 MB of data between the mountaintops of El Aguila and Platillon.</value>
+				<value>Did you know that Gogo was first conceived in 1991 on a napkin in a barbecue joint in Denison, TX?</value>
+				<value>It\'s a fact: Gogo is the first to bring affordable inflight Internet service to U.S. domestic airlines.</value>
+				<value>Aircell (Gogo\'s parent company) holds 15 patents on their innovations in airborne telecommunications.</value>
+				<value>Denison, TX, where Aircell began, is also the birthplace of Dwight D. Eisenhower, the 34th President of the United States.</value>
+				<value>\'Go.\' is the shortest complete sentence in the English language. Gogo is the inflight Internet service you can use to share this bit of trivia with someone on the ground.</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="losanglesFlightGeist" class="com.aircell.abp.model.FlightGeist">
+		<property name="group" value="KLAX"/>
+		<property name="type" value="destinationCity"/>
+		<property name="facts">
+			<list>
+				<value>Los Angeles\'s full name is \'El Pueblo de Nuestra Se&ntilde;ora la Reina de los&Aacute;ngeles de Porci&uacute;ncula\' (The Town of Our Lady the Queen of Angels of the Little Portion) and can be abbreviated to 3.63% of its original size: \'L.A.\' </value>
+				<value>If you were to take a taxicab from New York City to Los Angeles, it would cost you around $8,325.</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="miamiFlightGeist" class="com.aircell.abp.model.FlightGeist">
+		<property name="group" value="KMIA"/>
+		<property name="type" value="destinationCity"/>
+		<property name="facts">
+			<list>
+				<value>The Port of Miami is the largest cruise ship port in the world, servicing 4 million passengers a year.</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="newyorkFlightGeist" class="com.aircell.abp.model.FlightGeist">
+		<property name="group" value="KJFK"/>
+		<property name="type" value="destinationCity"/>
+		<property name="facts">
+			<list>
+				<value>New York\'s \'Big Apple\' nickname comes from the large cash prizes that were once awarded in the city\'s horse racing circuit. Riders lucky enough to make it this far knew they had finally hit the \'big time.\'</value>
+				<value>New York City\'s subways contain an estimated 842 miles of track. Laid end to end, they would stretch from Manhattan to Chicago.</value>
+				<value>There are over 13,000 yellow cabs now operating in New York City. In 1907, there were only 65. Ironically, your odds of hailing one in the rain haven\'t improved one bit.</value>
+				<value>The New York subway system moves 4 million people a day: the equivalent of the entire population of Los Angeles proper.</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="sanfranciscoFlightGeist" class="com.aircell.abp.model.FlightGeist">
+		<property name="group" value="KSFO"/>
+		<property name="type" value="destinationCity"/>
+		<property name="facts">
+			<list>
+				<value>Alcatraz Island, home of the infamous maximum-security prison, means \'Isle of the Pelicans\' in Spanish.</value>
+				<value>San Francisco\'s Golden Gate Bridge has enough steel wires in its cables to circle the Earth 3.5 times.</value>
+				<value>San Francisco cable cars are the only moving National Historic Landmark.</value>
+				<value>The \'49ers\' are named after the year gold was discovered at Sutter\'s mill near San Francisco in the nineteenth century. The city itself also spans 49 square miles.</value>
+				<value>Fact: Makato Hagiwara, whose family operated the Japanese Tea Garden in San Francisco\'s Golden Gate Park, invented the Chinese fortune cookie in 1907.</value>
+				<value>Fact: Jacob Davis and Levis Strauss invented Denim jeans in San Francisco in 1873 for the gold rush miners who needed tough durable clothing.</value>
+			</list>
+		</property>
+	</bean>
+</beans>

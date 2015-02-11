@@ -1,0 +1,61 @@
+## showJsonError
+## creates a json array for the fieldName with the errors listed in the array
+## $path - the command path
+## $fieldName - the name of the field in the command
+#macro ( showJsonError $path $fieldName )
+#set( $fieldPath = "${path}.${fieldName}" )
+#springBind("$fieldPath")
+#set( $errors = $status.errorMessages)
+#if($errors)'$fieldName':[#foreach($error in $errors)#if($velocityCount > 1),#end'$error'#end]#end
+#end
+
+## showGlobalErrors
+## creates a json array from the passed in list of strings which will be added as
+## a globalErrors property
+#macro ( showGlobalErrors $errors $fieldName)
+'${fieldName}':[#foreach($error in $errors)#if($velocityCount > 1),#end'$error'#end]
+#end
+
+## showJsonValue
+## shows the value in single quotes if it exists, otherwise empty single quotes
+## $value - the value to show
+#macro ( showJsonValue $value )
+#if($value)'$value'#else''#end
+#end
+
+## showJsonNumber
+## shows the value without quotes if the value exists
+## $label - the label to place before the value
+## $value - the value to show
+#macro ( showJsonNumber $label $value )
+#if($label && $value)'$label':$value#end
+#end
+
+## showCommandError
+## creates a json array for the command with the errors listed in the array
+## $command - the command path
+## $fieldName - the name of the json array to show
+#macro ( showCommandError $command $fieldName )
+#set( $fieldPath = "${command}" )
+#springBind("$fieldPath")
+#set( $errors = $status.errorMessages)
+#if($errors)'$fieldName':[#foreach($error in $errors)#if($velocityCount > 1),#end'$error'#end]#end
+#end
+
+## showFieldErrors
+## creates a <p class="$class" for each error found for [$path.]$fieldName
+## $path - the command path
+## $fieldName - the name of the field in the path
+## $class - class to give to the paragraph elements
+#macro ( showFieldErrors $path $fieldName $class )
+#if ($path != "")
+#set( $fieldPath = "${path}.${fieldName}" )
+#else
+#set( $fieldPath = "${fieldName}" )
+#end
+#springBind($fieldPath)
+#set( $errors = $status.errorMessages)
+#foreach($error in $errors)
+<p class="${class}">$error</p>
+#end
+#end

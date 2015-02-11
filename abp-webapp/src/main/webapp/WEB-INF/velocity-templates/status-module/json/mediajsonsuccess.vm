@@ -1,0 +1,11 @@
+{
+    acpu_journal: {
+        journal_meta: {
+            acpuBatchVersion: #showJsonValue($acpuBatchVersion),
+            journalCreationDate: #showJsonValue($journalCreationDate)
+        },
+        media: {
+            id: #showJsonValue($media)
+        }
+    }
+}

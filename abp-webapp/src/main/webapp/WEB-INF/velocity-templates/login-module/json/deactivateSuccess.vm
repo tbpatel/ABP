@@ -1,0 +1,4 @@
+{
+#showJsonNumber("status",200)
+#if($errorCodes),#showGlobalErrors($errorCodes 'errors')#end
+}

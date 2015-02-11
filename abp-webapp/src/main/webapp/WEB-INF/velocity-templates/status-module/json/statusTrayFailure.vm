@@ -1,0 +1,5 @@
+{
+#if($status)#showJsonNumber("status",$status)#else#showJsonNumber("status",400)#end
+#if($globalErrors),#showGlobalErrors($globalErrors 'globalErrors')#end
+#if($errorCodes),#showGlobalErrors($errorCodes 'errors')#end
+}

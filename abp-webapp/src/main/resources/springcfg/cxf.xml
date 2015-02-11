@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/util
+http://www.springframework.org/schema/util/spring-util-2.0.xsd
+http://cxf.apache.org/jaxrs
+http://cxf.apache.org/schemas/jaxrs.xsd">
+
+	<import resource="classpath:META-INF/cxf/cxf.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-extension-jaxrs-binding.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
+
+	<jaxrs:server id="connectionService" address="/">
+		<jaxrs:serviceBeans>
+			<ref bean="connection" />
+		</jaxrs:serviceBeans>
+		<jaxrs:extensionMappings>
+			<entry key="xml" value="application/xml" />
+			<entry key="json" value="application/json" />
+		</jaxrs:extensionMappings>
+	</jaxrs:server>
+
+	<bean id="connection" class="com.aircell.abp.web.rest.AbsServicesImpl">
+		<property name="flight" ref="flight" />
+		<property name="absServiceHelper" ref="absServiceHelper" />
+		<property name="versionBean" ref="versionBean" />
+	</bean>
+
+	<bean id="jaxbProvider" class="org.apache.cxf.jaxrs.provider.JSONProvider">
+		<property name="namespaceMap" ref="jsonNamespaceMap" />
+	</bean>
+
+	<util:map id="jsonNamespaceMap" map-class="java.util.Hashtable">
+		<entry key="http://www.example.org/books" value="b" />
+	</util:map>
+
+	<bean id="timerFactory" class="org.springframework.scheduling.timer.TimerFactoryBean">
+		<property name="scheduledTimerTasks">
+			<list>
+				<!-- see the example above -->
+				<ref bean="scheduledTask" />
+				<ref bean="scheduleDelayedFlightInfoTask" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="scheduledTask" class="org.springframework.scheduling.timer.ScheduledTimerTask">
+		<!-- wait 10 seconds before starting repeated execution -->
+		<property name="delay" value="10000" />
+		<!-- run every 50 seconds -->
+		<property name="period" value="60000" />
+		<property name="timerTask" ref="refreshFlightInformation" />
+	</bean>
+
+	<bean id="scheduleDelayedFlightInfoTask" class="org.springframework.scheduling.timer.ScheduledTimerTask">
+		<!-- wait 10 seconds before starting repeated execution -->
+		<property name="delay" value="10000" />
+		<!-- run every 50 seconds -->
+		<property name="period" value="300000" />
+		<property name="timerTask" ref="updateDelayedFlightInfoTask" />
+	</bean>
+
+	<bean id="refreshFlightInformation"
+		class="org.springframework.scheduling.timer.MethodInvokingTimerTaskFactoryBean">
+		<property name="targetObject" ref="connection" />
+		<property name="targetMethod" value="refreshFlightInformation" />
+	</bean>
+
+	<bean id="updateDelayedFlightInfoTask"
+		class="org.springframework.scheduling.timer.MethodInvokingTimerTaskFactoryBean">
+		<property name="targetObject" ref="connection" />
+		<property name="targetMethod" value="updateDelayedFlightInfo" />
+	</bean>
+
+</beans>
+
+

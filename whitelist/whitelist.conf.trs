@@ -1,0 +1,189 @@
+
+
+# start wsj and frommers
+s.wsj.net/**	wl	1	
+
+*.dowjones.com/**	wl	1
+www.dowjones.com/**	wl	1
+dowjones.com/**	wl	1
+	
+air.wsj.com/**	wl	1
+
+*.googlesyndication.com/**	wl	1
+www.googlesyndication.com/**	wl	1
+googlesyndication.com/**	wl	1
+
+*.whatsonwhen.com/**	wl	1
+www.whatsonwhen.com/**	wl	1
+whatsonwhen.com/**	wl	1
+	
+yui.yahooapis.com/**	wl	1
+
+ad.doubleclick.net/**	wl	1
+
+*.ic-live.com/**	wl	1
+www.ic-live.com/**	wl	1
+ic-live.com/**	wl	1
+
+*.2mdn.net/**	wl	1
+www.2mdn.net/**	wl	1
+2mdn.net/**	wl	1
+
+*.wsjdigital.com/**	wl	1
+www.wsjdigital.com/**	wl	1
+wsjdigital.com/**	wl	1
+
+*.officelive.com/**	wl	1
+www.officelive.com/**	wl	1
+officelive.com/**	wl	1
+
+*.officeliveoffers.com/**	wl	1
+www.officeliveoffers.com/**	wl	1
+officeliveoffers.com/**	wl	1
+
+ots-beta.wmh0.com/**	wl	1
+microsoftoffice.112.2o7.net/**	wl	1
+ads1.msn.com/**	wl	1
+
+*.adrevolver.com/**	wl	1
+www.adrevolver.com/**	wl	1
+adrevolver.com/**	wl	1
+
+*.revsci.net/**	wl	1
+www.revsci.net/**	wl	1
+revsci.net/**	wl	1
+
+*.marketwatch.com/**	wl	1
+www.marketwatch.com/**	wl	1
+marketwatch.com/**	wl	1
+
+*.atdmt.com/**	wl	1
+www.atdmt.com/**	wl	1
+atdmt.com/**	wl	1
+# end wsj and frommers
+
+*.airtran.com/**	wl	1
+www.airtran.com/**	wl	1
+pressroom.airtran.com/**	wl	1
+investor.airtran.com/**	wl	1
+trackbags.airtran.com/**	wl	1
+investor.airtran.com/**	wl	1
+tickets.airtran.com/**	wl	1
+ebyepass.airtran.com/**	wl	1
+link.airtran.com/**	wl	1
+go.airtran.com/**	wl	1
+subscriber.airtran.com/**	wl	1 
+images.airtran.com/**	wl	1 
+es.airtran.com/**	wl	1
+a.airtran.com/**	wl	1
+metrics.airtran.com/**	wl	1
+smetrics.airtran.com/**	wl	1
+airtran.com/**	wl	1	
+
+*.net-escapes.com/**	wl	1
+www.net-escapes.com/**	wl	1
+net-escapes.com/**	wl	1
+
+*.airtranu.com/**	wl	1
+www.airtranu.com/**	wl	1
+airtranu.com/**	wl	1  
+
+*.xfares.com/**	wl	1
+www.xfares.com/**	wl	1
+xfares.com/**	wl	1
+
+*.x-fares.com/**	wl	1
+www.x-fares.com/**	wl	1
+x-fares.com/**	wl	1
+
+*.airtranairways.com/**	wl	1    
+www.airtranairways.com/**	wl	1
+airtranairways.com/**	wl	1 
+
+*.a2bcorporate.com/**	wl	1   
+www.a2bcorporate.com/**	wl	1
+a2bcorporate.com/**	wl	1
+
+*.eventfares.com/**	wl	1    
+www.eventfares.com/**	wl	1
+eventfares.com/**	wl	1
+
+*.airtranjobs.com/**	wl	1    
+www.airtranjobs.com/**	wl	1   
+airtranjobs.com/**	wl	1
+
+*.corporate-ir.net/**	wl	1
+www.corporate-ir.net/**	wl	1
+media.corporate-ir.net/**	wl	1
+chart.corporate-ir.net/**	wl	1
+corporate-ir.net/**	wl	1
+
+airtran.sponsorwise.com/**	wl	1
+
+*.airtranmagazine.com/**	wl	1
+www.airtranmagazine.com/**	wl	1
+airtranmagazine.com/**	wl	1
+
+*.timaticweb.com/**	wl	1
+www.timaticweb.com/**	wl	1
+timaticweb.com/**	wl	1
+
+images.wctravel.com/**	wl	1
+
+*.aplusrewards.com/**	wl	1   
+www.aplusrewards.com/**	wl	1   
+aplusrewards.com/**	wl	1   
+
+*.aplusvisa.com/**	wl	1
+www.aplusvisa.com/**	wl	1
+aplusvisa.com/**	wl	1
+
+*.juniper.com/**	wl	1
+www.juniper.com/**	wl	1
+juniper.com/**	wl	1
+
+airtran.homeandabroad.com/**	wl	1
+
+www.securecheckout.billmelater.com/**	wl	1
+
+airtran.taleo.net/**	wl	1
+
+*.paypal.com/**	wl	1
+www.paypal.com/**	wl	1
+paypal.com/**	wl	1
+
+mbox5.offermatica.com/**	wl	1
+
+airtran.ed10.net/**	wl	1
+
+airtran.ed4.net/**	wl	1 
+images.ed4.net/**	wl	1
+
+*.airtransc.com/**	wl	1
+www.airtransc.com/**	wl	1
+airtransc.com/**	wl	1
+
+209.235.250.198/**	wl	1
+
+ehg-airtran.hitbox.com/**	wl	1
+ehg-ccbn.hitbox.com/**	wl	1
+
+atadev.122.2O7.net/**	wl	1
+
+*.google-analytics.com/**	wl	1
+www.google-analytics.com/**	wl	1
+google-analytics.com/**	wl	1
+
+smp.specificmedia.com/**	wl	1
+
+adopt.specificclick.net/**	wl	1
+bp.specificclick.net/**	wl	1
+
+*.frontierairlines.com/**	wl	1
+www.frontierairlines.com/**	wl	1
+frontierairlines.com/**	wl	1
+
+wow.weather.com/**	wl	1        
+imawow.weather.com/**	wl	1
+x.weather.com/**	wl	1
+

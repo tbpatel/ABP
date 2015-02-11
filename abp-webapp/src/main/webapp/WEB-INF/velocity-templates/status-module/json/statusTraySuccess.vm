@@ -1,0 +1,35 @@
+{
+status:200,
+gogoFacts:#showJsonValue($gogoFacts),
+serviceInfo:{
+	alerts:[#foreach($alert in $serviceInfo.alerts)#if($velocityCount > 1),#end#showJsonValue($alert)#end],
+	service:#showJsonValue($serviceInfo.service),
+	remaining:#showJsonValue($serviceInfo.remaining),
+	quality:#showJsonValue($serviceInfo.quality)
+	},
+flightInfo:{
+	logo:#showJsonValue('https://www.aa.com/content/images/footer/footer_AAVacations.gif'),
+	airlineName:#showJsonValue($flightInfo.airlineName),
+	flightNumber:#showJsonValue($flightInfo.flightNumber),
+	departureCity:#showJsonValue($flightInfo.departureCity),
+	destinationCity:#showJsonValue($flightInfo.destinationCity),
+	origin:#showJsonValue($flightInfo.origin),
+	destination:#showJsonValue($flightInfo.destination),
+	loggedIn:#showJsonValue($flightInfo.loggedIn),
+	destinationAirportCode:#showJsonValue($flightInfo.destinationAirportCode),
+	departureAirportCode:#showJsonValue($flightInfo.departureAirportCode),
+	flightNumberInfo:#showJsonValue($flightInfo.flightNumberInfo),
+	airlineCode:#showJsonValue($flightInfo.airlineCode),	
+	tailNumber:#showJsonValue($flightInfo.tailNumber),
+	hSpeed:#showJsonValue($flightInfo.hSpeed),
+	vSpeed:#showJsonValue($flightInfo.vSpeed),
+	latitude:#showJsonValue($flightInfo.latitude),
+	longitude:#showJsonValue($flightInfo.longitude),
+	altitude:#showJsonValue($flightInfo.altitude),
+	localTime:#showJsonValue($flightInfo.localTime),
+	utcTime:#showJsonValue($flightInfo.utcTime),
+	expectedArrival:#showJsonValue($flightInfo.expectedArrival),
+	videoService:#showJsonValue($flightInfo.videoService)
+	}
+#if($errorCodes),#showGlobalErrors($errorCodes 'errors')#end
+}

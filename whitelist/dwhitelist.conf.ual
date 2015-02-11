@@ -1,0 +1,155 @@
+# Don't remove these lines                            #
+# DNS(eg. svr.com)		Port (0 means ANY)    #
+
+# start wsj and frommers
+s.wsj.net	0
+
+www.dowjones.com	0
+dowjones.com	0
+	
+air.wsj.com	0
+
+www.googlesyndication.com	0
+googlesyndication.com	0
+
+www.whatsonwhen.com	0
+whatsonwhen.com	0
+	
+yui.yahooapis.com	0
+
+ad.doubleclick.net	0
+
+www.ic-live.com	0
+ic-live.com	0
+
+www.2mdn.net	0
+
+www.wsjdigital.com	0
+wsjdigital.com	0
+
+www.officelive.com	0
+officelive.com	0
+
+www.officeliveoffers.com	0
+officeliveoffers.com	0
+
+ots-beta.wmh0.com	0
+microsoftoffice.112.2o7.net	0
+ads1.msn.com	0
+
+www.adrevolver.com	0
+adrevolver.com	0
+
+www.revsci.net	0
+revsci.net	0
+
+www.marketwatch.com	0
+marketwatch.com	0
+
+www.atdmt.com	0
+switch.atdmt.com	0
+atdmt.com	0
+# end wsj and frommers
+
+www.united.com	0
+travel.united.com	0
+shop.united.com	0
+store.united.com	0
+easyupdate.united.com	0
+ir.united.com	0
+suitedreams.united.com	0
+
+www.ual.com	0
+ual.com	0
+
+www.unitedvacations.com	0
+res.unitedvacations.com	0
+unitedvacations.com	0
+
+www.ua2go.com	0
+faq.ua2go.com	0
+
+www.ualsurvey.com	0
+
+www.staralliance.com	0
+staralliance.com	0
+
+united.promo.eprize.com	0
+
+www.unitedtracksurvey.com	0
+
+www.google-analytics.com	0
+ssl.google-analytics.com	0
+google-analytics.com	0
+
+survey.novatris.com	0
+
+pics1.truition.com	0
+
+media.fastclick.net	0
+
+images.triseptsolutions.com	0
+
+login.dotomi.com	0
+
+www.unitedmileageplus.com	0
+secure.unitedmileageplus.com	0
+
+www.ualmiles.com	0
+secure.ualmiles.com	0
+transfermiles.ualmiles.com	0
+
+www.ualmileageplus.com	0
+store.ualmileageplus.com	0
+
+www.unitedpromotions.com	0
+
+www.unitedpromos.com	0
+
+www.unitedoffers.com	0
+
+www.mymileageplus.com	0
+
+www.uaelitechoice.com	0
+
+www.unitedps.com	0
+
+ual-pro.taleo.net	0
+
+www.ualmessaging.com	0
+
+ua.flightlookup.com	0
+
+www.oanda.com	0
+
+www.mediaplex.com	0
+adfarm.mediaplex.com	0
+img.mediaplex.com	0
+altfarm.mediaplex.com	0
+img-cdn.mediaplex.com	0
+mediaplex.com	0
+
+a56.g.akamai.net	0
+a248.e.akamai.net	0
+
+www.united.com.ar	0
+www.unitedairlines.com.au	0
+www.unitedairlines.be	0
+www.united.com.br	0
+www.united.ca	0
+www.united.fr	0
+www.unitedairlines.de	0
+www.unitedairlines.com.hk	0
+www.unitedairlines.co.jp	0
+www.kr.united.com	0
+www.kw.united.com	0
+www.united.com.mx	0
+www.unitedairlines.nl	0
+www.cn.united.com	0
+www.unitedairlines.com.sg	0
+www.unitedairlines.ch	0
+www.tw.united.com	0
+www.unitedairlines.co.th	0
+www.unitedairlines.co.uk	0
+www.unitedairlines.com.vn	0
+
