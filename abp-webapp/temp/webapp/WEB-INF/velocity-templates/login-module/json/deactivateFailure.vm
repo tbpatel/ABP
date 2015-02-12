@@ -1,4 +1,0 @@
-{
-status:400
-#if($errorCodes),#showGlobalErrors($errorCodes 'errors')#end
-}

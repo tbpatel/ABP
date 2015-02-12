@@ -1,8 +1,0 @@
-{
-#if($status)#showJsonNumber("status",$status)#else#showJsonNumber("status",400)#end
-#if($globalErrors),#showGlobalErrors($globalErrors 'globalErrors')#end
-#if($passwordRejected),passwordRejected:#showJsonValue("${passwordRejected}")#else ,passwordRejected:'false'#end
-#if($errorCodes),#showGlobalErrors($errorCodes 'errors')#end
-#if($activateError) ,activateError:#showJsonValue("${activateError}") #end
-#if($gbptecherror) ,gbptecherror:#showJsonValue("${gbptecherror}") #end 
-}

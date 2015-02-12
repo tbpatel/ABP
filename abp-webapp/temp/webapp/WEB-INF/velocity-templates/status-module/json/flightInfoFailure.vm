@@ -1,5 +1,0 @@
-func({
-error:{
-details:"The Flight Informations are not available"
-}
-});
